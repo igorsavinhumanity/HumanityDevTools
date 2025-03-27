@@ -1,2 +1,2 @@
 # HumanityDevTools
-Dev tools for Humanity development
+Chrome extension for Dev tools for Humanity

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Humanity Token Fetcher",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.dev.humanitytcp-dev.com/*",
+        "https://*.humanitystaging.humanitytcp-dev.com/*",
+        "https://www.humanity.engineering/"
+      ],
+      "run_at": "document_end",
+      "all_frames": true,
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon-16.png"
+  }
+}
